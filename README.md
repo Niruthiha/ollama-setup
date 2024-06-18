@@ -40,7 +40,7 @@ Modify the prompt JSON object to interact with the models using different prompt
    curl -X POST -H "Content-Type: application/json" -d '{"model": "gemma:2b", "prompt": "What is the capital of France?"}' http://localhost:11434/api/generate
 
 3.  if i doesn't work try this
- 
+ ```bash
    curl -X POST -H "Content-Type: application/json" -d "{\"model\": \"gemma:2b\", \"prompt\": \"What is the capital of France?\"}" http://localhost:11434/api/generate
 
 
