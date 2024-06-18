@@ -1,5 +1,5 @@
 
-# Ollama Setup Instructions
+# Ollama Setup Instructions Steps Explained
 
 ## Introduction
 This repository contains the setup instructions for Llama3 and Gemma models. These instructions guide you through the process of running these models locally on your system.
@@ -15,12 +15,12 @@ This repository contains the setup instructions for Llama3 and Gemma models. The
    git clone https://github.com/ollama/ollama.git
    cd ollama
    
-2. Run llama3 model
+2. Run llama3 model: Purpose: This command (ollama run llama3) initiates the Llama3 model using the ollama command-line interface (CLI). It starts the Llama3 model with its default configuration or parameters. By executing this command in your terminal or command prompt, you are instructing your local system to launch the Llama3 model. This assumes that ollama is installed and properly configured on your system. The run llama3 part specifies that you want to start the Llama3 model specifically.
    ```bash
    ollama run llama3
 
 3. Use the following curl command to interact with the llama3 model/ Replace http://localhost:11434 with your specific setup details if using a different port or host.
-Modify the prompt JSON object to interact with the models using different prompts.
+Modify the prompt JSON object to interact with the models using different prompts. This curl command is used to interact with the Llama3 model after it has been started. It sends an HTTP POST request to the local server where Llama3 is running (http://localhost:11434/api/generate) with a JSON payload (-d '{"model": "llama3", "prompt": "What is the capital of France?"}') that specifies the model (Llama3) and a prompt ("What is the capital of France?"). When you execute this curl command, it sends a request to the Llama3 model server running on your local machine. The server processes the request, utilizes the specified model (llama3), generates a response based on the provided prompt (What is the capital of France?), and returns the result in the response body. This interaction demonstrates how you can programmatically communicate with the Llama3 model to obtain AI-generated responses for specific queries or prompts.
    ```bash
    curl -X POST -H "Content-Type: application/json" -d '{"model": "llama3", "prompt": "What is the capital of France?"}'  http://localhost:11434/api/generate
 
