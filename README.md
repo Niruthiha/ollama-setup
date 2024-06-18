@@ -16,7 +16,8 @@ This repository contains the setup instructions for Llama3 and Gemma models. The
    cd ollama
 
 ## Run llama3 model
-ollama run llama3
+   ```bash
+   ollama run llama3
 
 ## Use the following curl command to interact with the llama3 model
 curl -X POST -H "Content-Type: application/json" -d '{"model": "llama3", "prompt": "What is the capital of France?"}' http://localhost:11434/api/generate
