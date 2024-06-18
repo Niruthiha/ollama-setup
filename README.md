@@ -6,6 +6,7 @@ This repository contains the setup instructions for Llama3 and Gemma models. The
 
 ## Prerequisites
 - Ollama - Install here -> https://ollama.com/download
+- For more reference -> https://github.com/ollama/ollama 
 - Docker (if using Docker for setup)
 
 ## Setup Llama3
