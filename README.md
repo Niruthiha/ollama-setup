@@ -23,6 +23,11 @@ This repository contains the setup instructions for Llama3 and Gemma models. The
 Modify the prompt JSON object to interact with the models using different prompts. This curl command is used to interact with the Llama3 model after it has been started. It sends an HTTP POST request to the local server where Llama3 is running (http://localhost:11434/api/generate) with a JSON payload (-d '{"model": "llama3", "prompt": "What is the capital of France?"}') that specifies the model (Llama3) and a prompt ("What is the capital of France?"). When you execute this curl command, it sends a request to the Llama3 model server running on your local machine. The server processes the request, utilizes the specified model (llama3), generates a response based on the provided prompt (What is the capital of France?), and returns the result in the response body. This interaction demonstrates how you can programmatically communicate with the Llama3 model to obtain AI-generated responses for specific queries or prompts.
    ```bash
    curl -X POST -H "Content-Type: application/json" -d '{"model": "llama3", "prompt": "What is the capital of France?"}'  http://localhost:11434/api/generate
+   
+ if i doesn't work try this
+
+   curl -X POST -H "Content-Type: application/json" -d "{\"model\": \"llama3\", \"prompt\": \"What is the capital of France?\"}" http://localhost:11434/api/generate
+
 
 ## Setup Gemma Model
 1. Run gemma model: This command (ollama run gemma:2b) initiates the Gemma model using the ollama command-line interface (CLI). It starts the Gemma model with a                         specific configuration (2b in this case, which likely denotes a specific version or configuration of the Gemma model).By running this command, you are                        instructing your local system to start the Gemma model. This step assumes that ollama (the command-line tool for managing LLMs) is installed and                              configured correctly on your system. The 2b version/configuration indicates which specific variant or setup of the Gemma model you want to run.
