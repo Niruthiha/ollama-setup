@@ -10,7 +10,7 @@ This repository contains the setup instructions for Llama3 and Gemma models. The
 - Docker (if using Docker for setup)
 
 ## Setup Llama3
-1. Clone the Ollama repository:
+1. Clone the Ollama repository by running this:
    ```bash
    git clone https://github.com/ollama/ollama.git
    cd ollama
