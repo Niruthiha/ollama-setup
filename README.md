@@ -5,8 +5,7 @@
 This repository contains the setup instructions for Llama3 and Gemma models. These instructions guide you through the process of running these models locally on your system.
 
 ## Prerequisites
-- Git
-- Node.js (if applicable)
+- Ollama - Install here -> https://ollama.com/download
 - Docker (if using Docker for setup)
 
 ## Setup Llama3
