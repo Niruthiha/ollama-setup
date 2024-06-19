@@ -1,102 +1,84 @@
-C:\Users\nirut>curl -X POST -H "Content-Type: application/json" -d "{\"model\": \"llama3\", \"prompt\": \"What is the capital of France?\"}" http://localhost:11434/api/generate
-{"model":"llama3","created_at":"2024-06-19T18:46:24.0764102Z","response":"The","done":false}
-{"model":"llama3","created_at":"2024-06-19T18:46:24.3450635Z","response":" capital","done":false}
-{"model":"llama3","created_at":"2024-06-19T18:46:24.6283714Z","response":" of","done":false}
-{"model":"llama3","created_at":"2024-06-19T18:46:24.9115825Z","response":" France","done":false}
-{"model":"llama3","created_at":"2024-06-19T18:46:25.2042101Z","response":" is","done":false}
-{"model":"llama3","created_at":"2024-06-19T18:46:25.5069396Z","response":" Paris","done":false}
-{"model":"llama3","created_at":"2024-06-19T18:46:25.8032389Z","response":".","done":false}
-{"model":"llama3","created_at":"2024-06-19T18:46:26.1024856Z","response":"","done":true,"done_reason":"stop","context":[128006,882,128007,271,3923,374,279,6864,315,9822,30,128009,128006,78191,128007,271,791,6864,315,9822,374,12366,13,128009],"total_duration":5464252600,"load_duration":11080700,"prompt_eval_count":17,"prompt_eval_duration":3413504000,"eval_count":8,"eval_duration":2025825000}
 
-__________________________________________________
+C:\Users\nirut\ollama>ollama run llama3
+>>>
 
-C:\Users\nirut>curl -X POST -H "Content-Type: application/json" -d "{\"model\": \"gemma:2b\", \"prompt\": \"What is the capital of France?\"}" http://localhost:11434/api/generate
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:46.5256194Z","response":"The","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:46.6218474Z","response":" capital","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:46.7111989Z","response":" of","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:46.7996516Z","response":" France","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:46.8864953Z","response":" is","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:46.9766351Z","response":" Paris","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.0632864Z","response":".","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.1512996Z","response":"\n\n","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.2360862Z","response":"The","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.3315835Z","response":" capital","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.4173166Z","response":" of","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.5029089Z","response":" France","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.5980115Z","response":" is","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.6901487Z","response":" a","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.7767183Z","response":" major","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.8636916Z","response":" political","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:47.948642Z","response":" and","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.0369633Z","response":" cultural","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.1277243Z","response":" center","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.2274371Z","response":" of","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.3247618Z","response":" the","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.4347691Z","response":" country","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.529651Z","response":".","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.6293563Z","response":" It","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.7231532Z","response":" is","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.8254984Z","response":" also","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:48.9233667Z","response":" the","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.0196191Z","response":" seat","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.1200351Z","response":" of","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.2183461Z","response":" French","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.3143201Z","response":" government","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.4101879Z","response":" and","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.504838Z","response":" the","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.6019141Z","response":" headquarters","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.6978717Z","response":" of","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.7957017Z","response":" several","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.8930092Z","response":" major","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:49.9868385Z","response":" international","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:50.1064086Z","response":" organizations","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:50.2067748Z","response":".","done":false}
-{"model":"gemma:2b","created_at":"2024-06-19T18:50:50.3045152Z","response":"","done":true,"done_reason":"stop","context":[968,2997,235298,559,235298,15508,235313,1645,108,1841,603,573,6037,576,6081,181537,615,235298,559,235298,15508,235313,108,235322,2997,235298,559,235298,15508,235313,2516,108,651,6037,576,6081,603,7127,235265,109,651,6037,576,6081,603,476,3885,6269,578,10831,5086,576,573,3170,235265,1165,603,1170,573,10250,576,6987,3838,578,573,31648,576,3757,3885,6191,12140,35606,615,235298,559,235298,15508,235313,108],"total_duration":9335648000,"load_duration":4265123000,"prompt_eval_count":33,"prompt_eval_duration":1284303000,"eval_count":41,"eval_duration":3780975000}
+C:\Users\nirut\ollama>curl -X POST -H "Content-Type: application/json" -d "{\"model\": \"llama3\", \"prompt\": \"What is the capital of France?\"}" http://localhost:11434/api/generate
+{"model":"llama3","created_at":"2024-06-19T19:01:02.8293063Z","response":"The","done":false}
+{"model":"llama3","created_at":"2024-06-19T19:01:03.2074694Z","response":" capital","done":false}
+{"model":"llama3","created_at":"2024-06-19T19:01:03.688179Z","response":" of","done":false}
+{"model":"llama3","created_at":"2024-06-19T19:01:04.1236623Z","response":" France","done":false}
+{"model":"llama3","created_at":"2024-06-19T19:01:04.4640681Z","response":" is","done":false}
+{"model":"llama3","created_at":"2024-06-19T19:01:04.8467034Z","response":" Paris","done":false}
+{"model":"llama3","created_at":"2024-06-19T19:01:05.2567065Z","response":".","done":false}
+{"model":"llama3","created_at":"2024-06-19T19:01:06.2949112Z","response":"","done":true,"done_reason":"stop","context":[128006,882,128007,271,3923,374,279,6864,315,9822,30,128009,128006,78191,128007,271,791,6864,315,9822,374,12366,13,128009],"total_duration":6792396300,"load_duration":5693800,"prompt_eval_count":17,"prompt_eval_duration":3306607000,"eval_count":8,"eval_duration":3464880000}
 
-_____________________________________________
+C:\Users\nirut\ollama>ollama run gemma:2b
+>>>
+
+C:\Users\nirut\ollama>curl -X POST -H "Content-Type: application/json" -d "{\"model\": \"gemma:2b\", \"prompt\": \"What is the capital of France?\"}" http://localhost:11434/api/generate
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:09.6640513Z","response":"The","done":false}
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:09.7512768Z","response":" capital","done":false}
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:09.8396428Z","response":" of","done":false}
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:09.9275948Z","response":" France","done":false}
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:10.0148124Z","response":" is","done":false}
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:10.1028085Z","response":" Paris","done":false}
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:10.1920033Z","response":".","done":false}
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:10.279568Z","response":"\n\n","done":false}
+{"model":"gemma:2b","created_at":"2024-06-19T19:02:10.894585Z","response":"","done":true,"done_reason":"stop","context":[968,2997,235298,559,235298,15508,235313,1645,108,1841,603,573,6037,576,6081,181537,615,235298,559,235298,15508,235313,108,235322,2997,235298,559,235298,15508,235313,2516,108,651,6037,576,6081,603,7127,235265,109,235322,615,235298,559,235298,15508,235313,108],"total_duration":2529510500,"load_duration":4951800,"prompt_eval_count":33,"prompt_eval_duration":1289027000,"eval_count":15,"eval_duration":1230427000}_____________________________
 To compare the two models, "llama3" and "gemma:2b," we need to evaluate their responses and performance metrics provided by the curl command results. Here's a detailed comparison based on the given output:
 
+
 Response Quality
+
 Llama3 Response:
 
 Response: "The capital of France is Paris."
 Completeness: The response is complete and correctly answers the question.
 Fluency: The response is fluent and clear, consisting of a well-formed sentence.
+
 Gemma:2b Response:
 
-Response: "international organizations."
-Completeness: The response is incomplete and irrelevant to the question asked.
-Fluency: The response lacks context and does not provide a meaningful answer to the prompt.
+Response: "The capital of France is Paris.\n\n"
+Completeness: The response is complete and correctly answers the question.
+Fluency: The response is fluent and clear. It also includes two newline characters at the end, which are unnecessary but do not affect the correctness of the answer.
 Performance Metrics
+
 Llama3:
 
-Total Duration: 5,464,252,600 ns (approximately 5.46 seconds)
-Load Duration: 11,080,700 ns (approximately 0.011 seconds)
+Total Duration: 6,792,396,300 ns (approximately 6.79 seconds)
+Load Duration: 5,693,800 ns (approximately 0.0057 seconds)
 Prompt Eval Count: 17
-Prompt Eval Duration: 3,413,504,000 ns (approximately 3.41 seconds)
+Prompt Eval Duration: 3,306,607,000 ns (approximately 3.31 seconds)
 Eval Count: 8
-Eval Duration: 2,025,825,000 ns (approximately 2.03 seconds)
+Eval Duration: 3,464,880,000 ns (approximately 3.46 seconds)
+
 Gemma:2b:
 
-Total Duration: 9,335,648,000 ns (approximately 9.34 seconds)
-Load Duration: 4,265,123,000 ns (approximately 4.27 seconds)
+Total Duration: 2,529,510,500 ns (approximately 2.53 seconds)
+Load Duration: 4,951,800 ns (approximately 0.0049 seconds)
 Prompt Eval Count: 33
-Prompt Eval Duration: 1,284,303,000 ns (approximately 1.28 seconds)
-Eval Count: 41
-Eval Duration: 3,780,975,000 ns (approximately 3.78 seconds)
+Prompt Eval Duration: 1,289,027,000 ns (approximately 1.29 seconds)
+Eval Count: 15
+Eval Duration: 1,230,427,000 ns (approximately 1.23 seconds)
 Comparison
 Response Accuracy and Relevance:
 
-Llama3 provided a correct and complete answer to the prompt.
-Gemma:2b failed to provide a relevant answer.
+Both Llama3 and Gemma:2b provided correct and complete answers to the prompt.
 Response Fluency:
 
-Llama3 generated a clear and fluent response.
-Gemma:2b's response was disconnected from the context of the question.
+Both responses are fluent and clear, but Gemma:2b included unnecessary newline characters at the end.
 Performance:
 
-Llama3 was faster overall, with a total duration of approximately 5.46 seconds compared to Gemma:2b's 9.34 seconds.
-Llama3 had a quicker load duration and prompt evaluation but fewer prompt evaluations and evaluations overall.
-Gemma:2b had a longer load duration and more evaluations, which contributed to its slower response time.
+Gemma:2b was significantly faster overall, with a total duration of approximately 2.53 seconds compared to Llama3's 6.79 seconds.
+Gemma:2b had a slightly quicker load duration.
+Gemma:2b performed more prompt evaluations (33 vs. 17) and evaluations (15 vs. 8), but still managed to be faster overall.
 Conclusion
-Based on the given responses and performance metrics, Llama3 outperforms Gemma:2b in terms of response accuracy, relevance, and overall performance speed. "Llama3" is more effective for generating complete and contextually appropriate answers to prompts.
+Response Quality: Both models provided accurate and complete responses, but Gemma:2b added unnecessary newline characters.
+Performance: Gemma:2b was faster overall in generating the response.
+In summary, while both models performed well in terms of response accuracy, Gemma:2b was more efficient, delivering the answer in a shorter amount of time despite performing more evaluations. However, Llama3's response was slightly cleaner without the additional newline characters. If speed is a critical factor, Gemma:2b would be the preferred choice; otherwise, both models are effective for generating correct and relevant responses.
+
+
+
+
+
+
